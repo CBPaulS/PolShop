@@ -1,0 +1,7 @@
+{
+  "name": "PolShopp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
