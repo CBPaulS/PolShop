@@ -1,47 +1,81 @@
 <body>
-  <ion-button shape="round" class="titulo " (click)="goCarrito()"><h2 class="titulo-texto">Pol Shop</h2></ion-button>
-  <button class="perfil">
-    <img class="perfil-pic"src="../../assets/usuario_foto.png" alt="usuario foto">
-  </button>
-  <div class="usuario-nombre">
-    <h2 class="nombre">Paulito Dior</h2>
+  <div class="header">
+    <div class="headercarrito">
+      <ion-button class="boton" shape="round" (click)="goCarrito()" >
+        <ion-icon class="carro" name="cart"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="titulo">
+    <h2 class="titulo-texto">Pol Shop</h2>
+    </div>
+      <ion-button class="boton" shape="round" (click)="goPerfil()" >
+        <img src="../../assets/Perfi-Foto.png" alt="perfil">
+      </ion-button>
   </div>
+  <ion-searchbar placeholder="Busca tu producto"></ion-searchbar>
+  <h2 class="tituloParaTi">Ultimas Noticias</h2>
+  <ion-list [inset]="true">
+    <ion-item [button]="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start">
+        <div class="unread-indicator"></div>
+      </div>
+      <ion-label>
+        <strong>BLACK FRIDAY!!!</strong>
+        <ion-text>LLego el viernes negro</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">
+          El Viernes negro llego y con esto llego las ofertas!!!
+        </ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">06:11</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+    <ion-item [button]="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start"></div>
+      <ion-label>
+        <strong>El Viernes Negro se acerca</strong>
+        <ion-text>Prepara la carterita para gastar!</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">Le go</ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">03:44</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+   
+  </ion-list>
   <h2 class="tituloParaTi">Productos Para Ti</h2>
-  <div class="ProductosParaTi">
+  <div class="ViewParati">
+      <div class="Productosparati">
+        <div class="producto1">
+          <img src="../../assets/Producto1.png" alt="producto1">
+         </div>
+         <div class="producto1">
+           <img src="../../assets/Producto2.png" alt="producto1">
+         </div>
+         <div class="producto1">
+           <img src="../../assets/Producto3.png" alt="producto1">
+         </div>
+         <div class="producto1">
+           <img src="../../assets/Producto1.png" alt="producto1">
+         </div>
+         <div class="producto1">
+           <img src="../../assets/Producto2.png" alt="producto1">
+         </div>
+         <div class="producto1">
+           <img src="../../assets/Producto3.png" alt="producto1">
+         </div>
 
-      <div class="ViewParati">
-            <div class="producto1">
-              <img src="../../assets/Producto1.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
-            <div class="producto1">
-              <img src="../../assets/Producto2.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
-            <div class="producto1">
-              <img src="../../assets/Producto3.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
-            <div class="producto1">
-              <img src="../../assets/Producto1.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
-            <div class="producto1">
-              <img src="../../assets/Producto2.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
-            <div class="producto1">
-              <img src="../../assets/Producto3.png" alt="producto1">
-              <h3 class="precio">$100</h3>
-            </div>
       </div>
   </div>
   <h2 class="tituloProductoDelMes">Producto del Mes</h2>
   <div class="ProductodelMes">
-    <img class="ProductoDelMes-Pic" src="../../assets/ProductoDelMes.png" alt="ProductodelMes">
-    <div class="texto">
-      <h3 class="texto1">$700</h3>
-      <h3 class="texto2">$500</h3>
+    <div class="imgpro">
+      <img class="ProductoDelMes-Pic" src="../../assets/ProductoDelMes.png" alt="ProductodelMes">
+    </div>
+    <div class="precio">
+      <h3>$500</h3>
     </div>
   </div>
 </body>

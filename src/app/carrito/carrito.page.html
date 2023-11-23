@@ -1,10 +1,15 @@
 <body>
-  <div class="encabezado">
-    <ion-button class="menu" (click)="goHome()"><img src="../../assets/icon _menu_.png" alt="menu"></ion-button>
-    <div class="perfil">
-      <img src="../../assets/Perfi-Foto.png" alt="perfil">
+  <div class="header">
+    <div class="headermenu">
+      <ion-button class="boton" shape="round" (click)="goHome()" >
+        <ion-icon class="menu" name="menu"></ion-icon>
+      </ion-button>
     </div>
+      <ion-button class="boton" shape="round" (click)="goPerfil()" >
+        <img src="../../assets/Perfi-Foto.png" alt="perfil">
+      </ion-button>  
   </div>
+  <ion-searchbar placeholder="Busca en tu lista de compras BB"></ion-searchbar>
   <h2 class="subtitulo">Lista De Compras</h2>
   <div class="viewListaCompras">
     <div class="listacompras">

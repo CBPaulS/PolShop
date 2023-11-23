@@ -7,9 +7,15 @@ import { Router } from '@angular/router';
 })
 export class CarritoPage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
+  
+  ngOnInit() {
+  }
   goHome(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/home'])
+  }
+  goPerfil(){
+    this.router.navigate(['/perfil'])
   }
 
 }

@@ -12,5 +12,8 @@ export class HomePage {
   goCarrito(){
     this.router.navigate(['/carrito']);
   }
+  goPerfil(){
+    this.router.navigate(['/perfil']);
+  }
 
 }
